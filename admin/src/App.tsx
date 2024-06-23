@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 
-const AppTheme = "light";
+const AppTheme = "dark";
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const App = () => {
   }, [AppTheme]);
 
   return (
-    <div className="relative min-h-dvh">
+    <div className="relative min-h-dvh font-mono">
       <MainContent />
       <Sidebar />
       <Navbar />

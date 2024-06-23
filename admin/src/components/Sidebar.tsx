@@ -1,10 +1,23 @@
-import {ReactNode, useState} from "react";
+import {ReactNode, useEffect, useState} from "react";
 import {cn} from "../utils/cn";
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 import {Book, Dashboard, Fine, Notifications, Reservations, Users} from "../assets/Icons";
 
 const Sidebar = () => {
   const [activeMenuId, setActiveMenuId] = useState(1);
+  const currentRoute = useLocation().pathname;
+
+  useEffect(() => {
+    const findActiveMenu = () => {
+      const routePaths = ["/", "/dash", "/book", "/user", "/rese", "/fine", "/noti"];
+      const id = routePaths.indexOf(currentRoute.substring(0, 5));
+      if (id === 0) {
+        return 1;
+      }
+      return id;
+    };
+    setActiveMenuId(findActiveMenu());
+  }, []);
   const navigate = useNavigate();
   const menuList = [
     {

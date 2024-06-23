@@ -82,10 +82,29 @@ export const Notifications = ({...props}: IconProps) => (
 
 export const Fine = ({...props}: IconProps) => (
   <SVGWrapper {...props}>
-    <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
-    <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
-    <path d="m2 16 6 6" />
-    <circle cx="16" cy="9" r="2.9" />
-    <circle cx="6" cy="5" r="3" />
+    <rect width="20" height="12" x="2" y="6" rx="2" />
+    <circle cx="12" cy="12" r="2" />
+    <path d="M6 12h.01M18 12h.01" />
+  </SVGWrapper>
+);
+
+export const Add = ({...props}: IconProps) => (
+  <SVGWrapper {...props}>
+    <path d="M5 12h14" />
+    <path d="M12 5v14" />
+  </SVGWrapper>
+);
+
+export const Search = ({...props}: IconProps) => (
+  <SVGWrapper {...props}>
+    <circle cx="11" cy="11" r="8" />
+    <path d="m21 21-4.3-4.3" />
+  </SVGWrapper>
+);
+
+export const Close = ({...props}: IconProps) => (
+  <SVGWrapper {...props}>
+    <path d="M18 6 6 18" />
+    <path d="m6 6 12 12" />
   </SVGWrapper>
 );
