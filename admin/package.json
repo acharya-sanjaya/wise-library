@@ -10,14 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.6.0",
     "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.20",
     "clsx": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.52.0",
+    "pdf-lib": "^1.17.1",
+    "react-pdf": "^7.7.0",
     "react-router-dom": "^6.23.1",
-    "tailwind-merge": "^2.3.0"
+    "react-toastify": "^10.0.5",
+    "tailwind-merge": "^2.3.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "^4.0.9",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

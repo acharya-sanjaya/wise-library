@@ -22,6 +22,18 @@ export default {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        successive: {
+          DEFAULT: "hsl(var(--successive))",
+          foreground: "hsl(var(--successive-foreground))",
+        },
+        selected: {
+          DEFAULT: "hsl(var(--selected))",
+          foreground: "hsl(var(--selected-foreground))",
+        },
+        "successive-lighter": {
+          DEFAULT: "hsl(var(--successive-lighter))",
+          foreground: "hsl(var(--successive-lighter-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -38,6 +50,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        "great-vibes": ["Great Vibes", "cursive"],
       },
     },
   },
